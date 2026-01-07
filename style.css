@@ -1,0 +1,101 @@
+/* Base layout */
+html, body, .stApp {
+    height: 100%;
+    background-color: #f4f6fb;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Remove extra Streamlit padding */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Main title */
+h1 {
+    color: #000000;   /* BLACK */
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+}
+
+
+/* Section headings */
+h2 {
+
+    font-size: 26px;
+    margin-top: 1.5rem;
+}
+
+h2, h3 {
+    color: #1f2937;   /* Dark gray / near black */
+}
+
+
+/* Card-style sections */
+.section,
+div[data-testid="stVerticalBlock"] > div {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 22px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Metric cards */
+div[data-testid="metric-container"] {
+    background-color: #f9fafb;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* DataFrame styling */
+.stDataFrame {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #2563eb;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 18px;
+    font-weight: 600;
+    border: none;
+}
+
+.stButton > button:hover {
+    background-color: #1e40af;
+}
+
+/* Sliders */
+div[data-testid="stSlider"] {
+    padding-top: 10px;
+}
+
+/* Prediction result boxes */
+.success, .error {
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 18px;
+}
+
+/* Confusion matrix centering helper */
+.center-plot {
+    display: flex;
+    justify-content: center;
+}
+
+/* Expander */
+details summary {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* Footer spacing */
+footer {
+    visibility: hidden;
+}
